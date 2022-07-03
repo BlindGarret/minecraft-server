@@ -15,8 +15,8 @@ replicaCount: 1
 ##
 resources:
   requests:
-    memory: 512Mi
-    cpu: 500m
+    memory: 3072Mi
+    cpu: 1000m
 
 # upgrade strategy type (e.g. Recreate or RollingUpdate)
 strategyType: Recreate
@@ -184,7 +184,7 @@ minecraftServer:
   # Check accounts against Minecraft account service.
   onlineMode: true
   # If you adjust this, you may need to adjust resources.requests above to match.
-  memory: 1024M
+  memory: 3072M
   # General JVM options to be passed to the Minecraft server invocation
   jvmOpts: ""
   # Options like -X that need to proceed general JVM options
@@ -388,8 +388,8 @@ mcbackup:
 
   resources:
     requests:
-      memory: 512Mi
-      cpu: 500m
+      memory: 3072mi
+      cpu: 1000m
 
   persistence:
     annotations: {}
